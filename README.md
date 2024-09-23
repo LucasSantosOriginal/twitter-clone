@@ -1,6 +1,8 @@
 # React + Vite
 
-ESSE PROJETO ESTÁ EM ANDAMENTO!
+LEMBRE-SE para rodar este projeto é preciso escrever "npm run dev" no terminal.
+REMEMBER to run this project you need to type "npm run dev" in the terminal.
+
 
 
 
