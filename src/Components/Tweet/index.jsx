@@ -6,8 +6,9 @@ export function Tweet({ tweet }) {
     const [comments, setComments] = useState(0)
     const [like, setLikes] = useState(0)
     const [retweet, setRetweet] = useState(0)
-    
+
     function handleAction(action) {
+
 
         switch (action) {
             case 'like':
@@ -39,7 +40,7 @@ export function Tweet({ tweet }) {
                         <FontAwesomeIcon icon={faEllipsisH} className="text-gray-500" />
                     </div>
                     <p className="mt-2">{tweet.content}</p>
-                    {tweet.image && <img src={tweet.image} className="mt-3 rounded-2xl max-w-full h-auto" alt="user image content" />}
+                    {tweet.image && <img src={tweet.image} className="mt-3 rounded-2xl max-w-full h-auto" alt='user image content' />}
                     <div className="flex justify-between mt-4 text-gray-500">
                         <div className="flex items-center cursor-pointer hover:text-blue-400">
                             <FontAwesomeIcon icon={faComment} onClick={() => handleAction('comment')} />

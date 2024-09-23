@@ -3,6 +3,8 @@ import { faCalendarAlt, faChartBar, faFilm, faImage, faMapMarked, faSmile } from
 import { faMapMarkedAlt } from "@fortawesome/free-solid-svg-icons/faMapMarkedAlt";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRef } from 'react';
+import PropTypes from 'prop-types'; // ES6
+
 
 export function TwitterForm ({onTweet}){
 const textAreaRef = useRef ()
@@ -38,4 +40,10 @@ const textAreaRef = useRef ()
         </div>
 
     )
+}
+
+
+TwitterForm.PropTypes = {
+    onTweet: PropTypes.func
+
 }
